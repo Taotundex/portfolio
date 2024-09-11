@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAOFEEK</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <!-- <label class="swap swap-rotate">
+        <input type="checkbox" class="theme-controller" value="synthwave" />
+      
+        <svg
+          class="swap-off h-10 w-10 fill-current"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24">
+          <path
+            d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
+        </svg>
+      
+        <svg
+          class="swap-on h-10 w-10 fill-current"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24">
+          <path
+            d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
+        </svg>
+    </label> -->
+    <!-- <div class="portfolio"> -->
+        <div class="portfolio">
+            <div class="head border-b-[5px] border-b-[#CCF280]">
+                <!-- NAVBAR STARTS -->
+                <nav>
+                    <div class="container flex justify-between items-center py-5">
+                        <a href="" class="font-[900] text-[35px] text-[#CCF280]">Taofeek</a>
+                        <div class="flex flex-col bars gap-3 w-[65px]">
+                            <span id="first" class="h-[3px] w-full bg-[#4930D4]"></span>
+                            <span id="second" class="h-[3px] w-[75%] bg-[#4930D4] ml-auto"></span>
+                        </div>
+                    </div>
+                </nav>
+                <!-- NAVBAR ENDS -->
+
+                <!-- HERO-SECTION STARTS -->
+                <div class="hero">
+                    <div class="container">
+                        <div class="grid grid-cols-2 items-center">
+                            <div class="texts">
+                                <h2 class="text-[80px] font-[700] text-[#CCF280]">Web <br>Developer</h2>
+                                <p>I like to craft solid and scalable frontend products with great user experiences.</p>
+                                <div class="d-flex align-items-center gap-4">
+                                    <a href="">
+                                        <button class="button">
+                                            <span class="button_lg">
+                                                <span class="button_sl"></span>
+                                                <span class="button_text">Download CV</span>
+                                            </span>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="grid grid-cols-2 gap-5 mt-[100px]">
+                                    <small>Highly skilled at progressive enhancement, design systems & UI Engineering.</small>
+                                    <small>Proven experience building successful products for clients across several countries.</small>
+                                </div>
+                            </div>
+                            <div class="img">
+                                <img src="images/black-removebg-preview.png" width="100%" alt="profile">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- HERO-SECTION ENDS -->
+            </div>
+
+
+            <!-- ABOUT-SECTION STARTS -->
+            <div class="about py-[50px]">
+                <div class="container">
+                    <div class="grid grid-cols-4 items-center gap-[50px]">
+                        <div class="img col-span-1 border-[5px] border-[#4930D4] rounded-[20px]">
+                            <img class="p-5 border-[5px] border-[#CCF280] rounded-[15px] w-full h-[300px] object-cover" src="images/black-about-img.png" width="100%" alt="about-img">
+                        </div>
+                        <div class="texts col-span-3">
+                            <h2 style="letter-spacing: 3px;" class="text-[36px] font-[700] text-[#4930D4] underline underline-offset-[3px]">SELF-SUMMARY</h2>
+                            <div class="bg-[#4930D4] py-2 px-[35px] rounded-[20px] border-5 border-[#CCF280] border-[5px] border-[#4930D4]" style="background: radial-gradient(#CCF280, #4930D4);">
+                                <p style="line-height: 24px;" class="my-[20px] font-normal text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptates velit nihil vero excepturi nemo aliquam harum? Vero asperiores sapiente obcaecati, mollitia deserunt rerum aliquam dolor voluptates quasi vitae possimus incidunt. At mollitia, illum autem repudiandae nisi doloremque, in dolorem sapiente maiores, eveniet itaque tempore rerum consectetur placeat inventore sit?</p>
+                                <a href="#contact">
+                                    <button class="button">
+                                        <span class="button_lg">
+                                            <span class="button_sl"></span>
+                                            <span class="button_text">Know more about me...</span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-span-2">
+                            <h4>EXPERIENCE</h4>
+                            <h4></h4>
+                        </div>
+                        <div class="col-span-2">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ABOUT-SECTION ENDS -->
+
+            <!-- PROJECTS-SECTION STARTS -->
+            <div class="container">
+                <h2>Projects</h2>
+                <p class="paragraph">Most of time is spent building websites that I either find interesting or paid to do. Some of these projects are open source, so feel free to explore them and even contribute. Get in touch with me if you have any cool ideas that you'd like to discuss further or work on with me.</p>
+                <div class="buttons d-flex align-items-center justify-content-center gap-2 py-2">
+                    <button data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">Recent</button>
+                    <button data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">VanillaJS</button>
+                    <button data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">ReactJS</button>
+                    <button data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4">NextJS</button>
+                    <button data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5">PHP</button>
+                    <button data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6">Others</button>
+                </div>
+                <div class="projects">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="project shadow">
+                                            <div class="project-card">
+                                                <div class="box">
+                                                    <div class="content">
+                                                        <span class="heading">01</span>
+                                                        <span class="content">Card </span>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+                                                        <a href="">
+                                                            <button class="button">
+                                                                <span class="button_lg">
+                                                                    <span class="button_sl"></span>
+                                                                    <span class="button_text">Visit website</span>
+                                                                </span>
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="project shadow">
+                                            <div class="project-card">
+                                                <div class="box">
+                                                    <div class="content">
+                                                        <span class="heading">01</span>
+                                                        <span class="content">Card </span>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+                                                        <a href="">
+                                                            <button class="button">
+                                                                <span class="button_lg">
+                                                                    <span class="button_sl"></span>
+                                                                    <span class="button_text">Visit website</span>
+                                                                </span>
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="project shadow">
+                                            <div class="project-card">
+                                                <div class="box">
+                                                    <div class="content">
+                                                        <span class="heading">01</span>
+                                                        <span class="content">Card </span>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+                                                        <a href="">
+                                                            <button class="button">
+                                                                <span class="button_lg">
+                                                                    <span class="button_sl"></span>
+                                                                    <span class="button_text">Visit website</span>
+                                                                </span>
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="project shadow">
+                                            <div class="project-card">
+                                                <div class="box">
+                                                    <div class="content">
+                                                        <span class="heading arrow"><i class="bi bi-arrow-down mb-3"></i></span>
+                                                        <span class="content">More...</span>
+                                                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p> -->
+                                                        <a href="projects.html">
+                                                            <button class="button">
+                                                                <span class="button_lg">
+                                                                    <span class="button_sl"></span>
+                                                                    <span class="button_text">See more</span>
+                                                                </span>
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="project shadow">
+                                            <div class="project-card">
+                                                <div class="box">
+                                                    <div class="content">
+                                                        <span class="heading">01</span>
+                                                        <span class="content">Card </span>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+                                                        <a href="">
+                                                            <button class="button">
+                                                                <span class="button_lg">
+                                                                    <span class="button_sl"></span>
+                                                                    <span class="button_text">Visit website</span>
+                                                                </span>
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="project shadow">
+                                            <div class="project-card">
+                                                <div class="box">
+                                                    <div class="content">
+                                                        <span class="heading">01</span>
+                                                        <span class="content">Card </span>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+                                                        <a href="">
+                                                            <button class="button">
+                                                                <span class="button_lg">
+                                                                    <span class="button_sl"></span>
+                                                                    <span class="button_text">Visit website</span>
+                                                                </span>
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="project shadow">
+                                            <div class="project-card">
+                                                <div class="box">
+                                                    <div class="content">
+                                                        <span class="heading">01</span>
+                                                        <span class="content">Card </span>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+                                                        <a href="">
+                                                            <button class="button">
+                                                                <span class="button_lg">
+                                                                    <span class="button_sl"></span>
+                                                                    <span class="button_text">Visit website</span>
+                                                                </span>
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="project shadow">
+                                            <div class="project-card">
+                                                <div class="box">
+                                                    <div class="content">
+                                                        <span class="heading arrow"><i class="bi bi-arrow-down mb-3"></i></span>
+                                                        <span class="content">More...</span>
+                                                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p> -->
+                                                        <a href="projects.html">
+                                                            <button class="button">
+                                                                <span class="button_lg">
+                                                                    <span class="button_sl"></span>
+                                                                    <span class="button_text">See more</span>
+                                                                </span>
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="project shadow">
+                                            <div class="project-card">
+                                                <div class="box">
+                                                    <div class="content">
+                                                        <span class="heading">01</span>
+                                                        <span class="content">Card </span>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+                                                        <a href="">
+                                                            <button class="button">
+                                                                <span class="button_lg">
+                                                                    <span class="button_sl"></span>
+                                                                    <span class="button_text">Visit website</span>
+                                                                </span>
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="project shadow">
+                                            <div class="project-card">
+                                                <div class="box">
+                                                    <div class="content">
+                                                        <span class="heading">01</span>
+                                                        <span class="content">Card </span>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+                                                        <a href="">
+                                                            <button class="button">
+                                                                <span class="button_lg">
+                                                                    <span class="button_sl"></span>
+                                                                    <span class="button_text">Visit website</span>
+                                                                </span>
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="project shadow">
+                                            <div class="project-card">
+                                                <div class="box">
+                                                    <div class="content">
+                                                        <span class="heading">01</span>
+                                                        <span class="content">Card </span>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+                                                        <a href="">
+                                                            <button class="button">
+                                                                <span class="button_lg">
+                                                                    <span class="button_sl"></span>
+                                                                    <span class="button_text">Visit website</span>
+                                                                </span>
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="project shadow">
+                                            <div class="project-card">
+                                                <div class="box">
+                                                    <div class="content">
+                                                        <span class="heading arrow"><i class="bi bi-arrow-down mb-3"></i></span>
+                                                        <span class="content">More...</span>
+                                                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p> -->
+                                                        <a href="projects.html">
+                                                            <button class="button">
+                                                                <span class="button_lg">
+                                                                    <span class="button_sl"></span>
+                                                                    <span class="button_text">See more</span>
+                                                                </span>
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="project shadow">
+                                            <div class="project-card">
+                                                <div class="box">
+                                                    <div class="content">
+                                                        <span class="heading">01</span>
+                                                        <span class="content">Card </span>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+                                                        <a href="">
+                                                            <button class="button">
+                                                                <span class="button_lg">
+                                                                    <span class="button_sl"></span>
+                                                                    <span class="button_text">Visit website</span>
+                                                                </span>
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="project shadow">
+                                            <div class="project-card">
+                                                <div class="box">
+                                                    <div class="content">
+                                                        <span class="heading">01</span>
+                                                        <span class="content">Card </span>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+                                                        <a href="">
+                                                            <button class="button">
+                                                                <span class="button_lg">
+                                                                    <span class="button_sl"></span>
+                                                                    <span class="button_text">Visit website</span>
+                                                                </span>
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="project shadow">
+                                            <div class="project-card">
+                                                <div class="box">
+                                                    <div class="content">
+                                                        <span class="heading">01</span>
+                                                        <span class="content">Card </span>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+                                                        <a href="">
+                                                            <button class="button">
+                                                                <span class="button_lg">
+                                                                    <span class="button_sl"></span>
+                                                                    <span class="button_text">Visit website</span>
+                                                                </span>
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="project shadow">
+                                            <div class="project-card">
+                                                <div class="box">
+                                                    <div class="content">
+                                                        <span class="heading arrow"><i class="bi bi-arrow-down mb-3"></i></span>
+                                                        <span class="content">More...</span>
+                                                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p> -->
+                                                        <a href="projects.html">
+                                                            <button class="button">
+                                                                <span class="button_lg">
+                                                                    <span class="button_sl"></span>
+                                                                    <span class="button_text">See more</span>
+                                                                </span>
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="project shadow">
+                                            <div class="project-card">
+                                                <div class="box">
+                                                    <div class="content">
+                                                        <span class="heading">01</span>
+                                                        <span class="content">Card </span>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+                                                        <a href="">
+                                                            <button class="button">
+                                                                <span class="button_lg">
+                                                                    <span class="button_sl"></span>
+                                                                    <span class="button_text">Visit website</span>
+                                                                </span>
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="project shadow">
+                                            <div class="project-card">
+                                                <div class="box">
+                                                    <div class="content">
+                                                        <span class="heading">01</span>
+                                                        <span class="content">Card </span>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+                                                        <a href="">
+                                                            <button class="button">
+                                                                <span class="button_lg">
+                                                                    <span class="button_sl"></span>
+                                                                    <span class="button_text">Visit website</span>
+                                                                </span>
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="project shadow">
+                                            <div class="project-card">
+                                                <div class="box">
+                                                    <div class="content">
+                                                        <span class="heading">01</span>
+                                                        <span class="content">Card </span>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+                                                        <a href="">
+                                                            <button class="button">
+                                                                <span class="button_lg">
+                                                                    <span class="button_sl"></span>
+                                                                    <span class="button_text">Visit website</span>
+                                                                </span>
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="project shadow">
+                                            <div class="project-card">
+                                                <div class="box">
+                                                    <div class="content">
+                                                        <span class="heading arrow"><i class="bi bi-arrow-down mb-3"></i></span>
+                                                        <span class="content">More...</span>
+                                                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p> -->
+                                                        <a href="projects.html">
+                                                            <button class="button">
+                                                                <span class="button_lg">
+                                                                    <span class="button_sl"></span>
+                                                                    <span class="button_text">See more</span>
+                                                                </span>
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="project shadow">
+                                            <div class="project-card">
+                                                <div class="box">
+                                                    <div class="content">
+                                                        <span class="heading">01</span>
+                                                        <span class="content">Card </span>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+                                                        <a href="">
+                                                            <button class="button">
+                                                                <span class="button_lg">
+                                                                    <span class="button_sl"></span>
+                                                                    <span class="button_text">Visit website</span>
+                                                                </span>
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="project shadow">
+                                            <div class="project-card">
+                                                <div class="box">
+                                                    <div class="content">
+                                                        <span class="heading">01</span>
+                                                        <span class="content">Card </span>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+                                                        <a href="">
+                                                            <button class="button">
+                                                                <span class="button_lg">
+                                                                    <span class="button_sl"></span>
+                                                                    <span class="button_text">Visit website</span>
+                                                                </span>
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="project shadow">
+                                            <div class="project-card">
+                                                <div class="box">
+                                                    <div class="content">
+                                                        <span class="heading">01</span>
+                                                        <span class="content">Card </span>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+                                                        <a href="">
+                                                            <button class="button">
+                                                                <span class="button_lg">
+                                                                    <span class="button_sl"></span>
+                                                                    <span class="button_text">Visit website</span>
+                                                                </span>
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="project shadow">
+                                            <div class="project-card">
+                                                <div class="box">
+                                                    <div class="content">
+                                                        <span class="heading arrow"><i class="bi bi-arrow-down mb-3"></i></span>
+                                                        <span class="content">More...</span>
+                                                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p> -->
+                                                        <a href="projects.html">
+                                                            <button class="button">
+                                                                <span class="button_lg">
+                                                                    <span class="button_sl"></span>
+                                                                    <span class="button_text">See more</span>
+                                                                </span>
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- PROJECTS-SECTION ENDS -->
+
+            <!-- PROJECTS-SECTION STARTS -->
+            <div class="container">
+                <h2>Contact</h2>
+                
+            </div>
+            <!-- PROJECTS-SECTION ENDS -->
+        </div>
+
+    </div>
+
+
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</body>
+</html>

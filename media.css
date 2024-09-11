@@ -1,0 +1,134 @@
+@media screen and (max-width: 767px) {
+    .container {
+        width: 90% !important;
+    }
+    nav{
+        background: #f4f4f4 !important;
+    }
+    nav .active{
+        background: #f4f4f4 !important;
+        color: #001F3F !important;
+    }
+    nav .hidden .block{
+        color: #f4f4f4  !important;
+    }
+    .nav-lists{
+        background: #001F3F !important;
+        border-radius: 0 !important;
+        border-top-left-radius: 20px !important;
+        border-bottom-right-radius: 20px !important;
+    }
+    .hero{
+        background: linear-gradient(135deg, transparent 50%, #f4f4f4 50%);
+    }
+    .hero h2 {
+        letter-spacing: 1px;
+        font-size: 70px;
+        font-weight: 900;
+        line-height: 60px;
+    }
+    .hero .container{
+        gap: 50px;
+    }
+    .about .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .about h2 {
+        letter-spacing: 1px;
+        font-size: 45px;
+        font-weight: 900;
+        line-height: 40px;
+        color: #001F3F;
+    }
+    .services h2 {
+        letter-spacing: 2px;
+        font-size: 45px;
+        font-weight: 900;
+        line-height: 45px;
+        color: #001F3F;
+        text-transform: uppercase;
+    }
+    .projects .img img{
+        height: 250px;
+    }
+    .testimonials h2 {
+        letter-spacing: 1px;
+        font-size: 35px;
+        font-weight: 900;
+        line-height: 30px;
+    }
+    .testimonials #default-carousel blockquote p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+
+    .contact{
+        background: url(images/Zoom\ ultra\ modern\ office\ background\ green\ screen\ digital\ image\ in\ 4k.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 300px 0 200px 0;
+        /* height: 75vh; */
+    }
+    .contact h2 {
+        font-size: 75px;
+        font-weight: 900;
+        line-height: 70px;
+        color: #f4f4f4;
+    }
+    .contact h2 span {
+        color: #001F3F;
+        -webkit-text-stroke: 1px #f4f4f4;
+        text-transform: uppercase;
+    }
+    .message{
+        margin-top: 0px;
+    }
+    .message h2 {
+        font-size: 45px;
+        line-height: 40px;
+    }
+
+    
+    footer .social i {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+    small {
+        font-size: 12px !important;
+        line-height: 0px !important;
+    }
+    nav .nav{
+        padding: 25px 0;
+    }
+    nav .nav a{
+        font-size: 25px;
+    }
+    nav .nav .bar{
+        width: 50px;
+    }
+    .first .hero .texting{
+        position: absolute;
+        top: 125px;
+        left: 0%;
+        z-index: 1;
+    }
+    .first .texts h2{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .first .texts p{
+        margin: 15px 0;
+    }
+    /* .first .hero .profile-img{
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        z-index: 0;
+    } */
+}

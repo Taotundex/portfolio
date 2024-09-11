@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAOFEEK</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="portfolio">
+    <!-- NAVBAR Start -->
+    <nav class="bg-transparent border-b-2 lg:border-transparent md:border-[#f4f4f4] border-[#f4f4f4] fixed top-0 w-full z-1000">
+      <div class="container max-w-screen-xl mx-auto flex flex-wrap items-center justify-between py-4">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+            <span class="text-[#001F3F] lg:text-[#001F3F] self-center text-2xl font-semibold whitespace-nowrap">Taofeek</span>
+        </a>
+        <button data-collapse-toggle="navbar-multi-level" type="button" class="btn inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-multi-level" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto flex items-center justify-between" id="navbar-multi-level">
+          <div class="flex lg:flex-row md:flex-col flex-col lg:gap-0 md:gap-5 gap-5 lg:w-[850px] md:w-full w-full items-center justify-between mycenter">
+            <ul class="lg:w-fit md:w-full w-full text-center flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 nav-lists">
+              <li>
+                <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent active" aria-current="page">Home</a>
+              </li>
+              <li>
+                <a href="#about" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+              </li>
+              <li>
+                <a href="#projects" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
+              </li>
+              <li>
+                  <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="block flex items-center justify-center gap-0 w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Services <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                      </svg>
+                  </button>
+                  <!-- Dropdown menu -->
+                  <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                      <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
+                        <li>
+                          <a href="frontend.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Frontend</a>
+                        </li>
+                        <li>
+                          <a href="fullstack.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">FullStack</a>
+                        </li>
+                        <li aria-labelledby="dropdownNavbarLink">
+                          <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" type="button" class="flex items-center justify-center w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Arch. Design<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                              </svg>
+                          </button>
+                          <div id="doubleDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
+                                <li>
+                                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Floor Plan</a>
+                                </li>
+                                <li>
+                                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">3D Design</a>
+                                </li>
+                              </ul>
+                          </div>
+                        </li>
+                      </ul>
+                  </div>
+              </li>
+              <li>
+                <a href="#testimonials" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Testimonials</a>
+              </li>
+            </ul>
+            <a href="contact.html">
+              <button type="button" class="relative z-[-1] block btn text-white border border-[#001F3F] outline-none py-3 px-10 rounded-full">Contact Me</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR End -->
+
+
+    <section class="hero flex items-center" id="home">
+      <div class="container max-w-screen-xl mx-auto grid lg:grid-cols-2 items-center md:grid-cols-1 sm:grid-cols-1">
+        <div class="text flex flex-col gap-5">
+          <h2><div data-aos="fade-down" data-aos-duration="1000" class="">WEB </div><span data-aos="fade-left" data-aos-duration="1500">DEVELOPER</span></h2>
+          <h3 data-aos="fade-right"><i>A FULL STACK WEB DEVELOPER (FRONTEND & BACKEND).</i></h3>
+          <p data-aos="fade-right">I will turn your ideas into reality</p>
+          <a href="" data-aos="fade-up"><button class="btn text-white border border-[#001F3F] outline-none py-3 px-10 rounded-full">Download CV</button></a>
+        </div>
+        <div class="img">
+          <img data-aos="fade-left" data-aos-duration="1500" src="images/hero.png" width="100%" alt="">
+        </div>
+      </div>
+    </section>
+
+
+    <!-- <section id="services" class="services py-10 pt-[100px]">
+      <div class="container max-w-screen-xl mx-auto">
+        <div class="grid grid-cols-4 gap-5">
+          <div class="btn service lg:col-span-1 md:col-span-2 col-span-4 flex flex-col gap-5 items-center" data-aos="fade-right" data-aos-duration="1000">
+            <img src="images/frontend.png" width="20%" alt="">
+            <h3>Front-End Development</h3>
+            <p>I specialize in building responsive and user-friendly web interfaces using HTML, CSS, and JavaScript.</p>
+          </div>
+          <div class="btn service lg:col-span-1 md:col-span-2 col-span-4 flex flex-col gap-5 items-center" data-aos="fade-down" data-aos-duration="1500">
+            <img src="images/backend.png" width="20%" alt="">
+            <h3>Back-End Development</h3>
+            <p>I am proficient in building RESTful APIs and server-side</p>
+          </div>
+          <div class="btn service lg:col-span-1 md:col-span-2 col-span-4 flex flex-col gap-5 items-center" data-aos="fade-up" data-aos-duration="2000">
+            <img src="images/frontend.png" width="20%" alt="">
+            <h3>Front-End Development</h3>
+            <p>I specialize in building responsive and user-friendly web interfaces using HTML, CSS, and JavaScript.</p>
+          </div>
+          <div class="btn service lg:col-span-1 md:col-span-2 col-span-4 flex flex-col gap-5 items-center" data-aos="fade-left" data-aos-duration="2500">
+            <img src="images/backend.png" width="20%" alt="">
+            <h3>Back-End Development</h3>
+            <p>I am proficient in building RESTful APIs and server-side</p>
+          </div>
+      </div>
+    </section> -->
+
+
+    <section class="about flex items-center py-[75px]" id="about">
+      <div class="container max-w-screen-xl mx-auto grid lg:grid-cols-5 md:grid-cols-2 sm:grid-cols-1 flex items-center gap-10">
+        <div class="img lg:col-span-2 md:col-span-2 sm:col-span-1" data-aos="fade-right" data-aos-duration="1500">
+          <img src="images/black-about-img.png" width="100%" alt="">
+        </div>
+        <div class="text flex flex-col gap-5 lg:col-span-3 md:col-span-2 sm:col-span-1 lg:pl-0 md:pl-0 sm:pl-0 py-5 lg:px-0 md:px-5 sm:px-5" data-aos="fade-left" >
+          <div class="head" data-aos="fade-down">
+            <p>Hi There</p>
+            <h4>I'm Aremu Taofeek O.</h4>
+          </div>
+          <h2><span data-aos="fade-right" data-aos-duration="1000">FULLSTACK</span><div class="" data-aos="fade-left" data-aos-duration="1000">WEB DEVELOPER</div></h2>
+          <div class="paragraph flex flex-col gap-3">
+            <p>I am a professional Fullstack Website Developer having 3 years of experience. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nulla.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sunt nam maiores quis voluptate quas error! Neque odit qui, nam minima libero facilis rerum? Sequi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure officia doloribus, expedita fuga corrupti soluta placeat nihil necessitatibus laudantium suscipit?</p>
+            <p class="p">I help clients to bring their ideas into reality.</p>
+          </div>
+          <a href="" data-aos="fade-up"><button class="btn text-white border border-[#001F3F] outline-none py-3 px-10 rounded-full">Hire Me</button></a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="services py-[75px]" id="services">
+      <div class="container max-w-screen-xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 items-center gap-10">
+          <div class="head">
+            <h2 class="flex flex-col"><span data-aos="fade-down">UNIQUE and </span><div data-aos="fade-up">professional</div></h2>
+          </div>
+          <div class="text flex flex-col gap-3 py-5"  data-aos="fade-left">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quidem dolorem suscipit, praesentium, consequatur, delectus obcaecati nisi cumque sint et asperiores dolore voluptate debitis nostrum similique in fugit rem accusantium unde. Accusamus dolorum dolore enim.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quidem dolorem suscipit, praesentium, consequatur, delectus obcaecati nisi cumque sint et asperiores dolore voluptate debitis nostrum similique in fugit rem accusantium unde. Accusamus dolorum dolore enim.</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-[30px] py-5">
+          <div data-aos="fade-right" data-aos-duration="1500" class="service p-[30px] bg-[#f4f4f480] rounded-[10px] flex flex-col gap-3">
+            <i class="bi bi-laptop icon flex items-center justify-center"></i>
+            <h4>Frontend</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora perferendis expedita itaque impedit provident! Temporibus repellendus rem obcaecati dolor ea odit, omnis illum in nobis!</p>
+            <a href="" class="flex items-center gap-3 px-3 py-2"><i class="bi bi-chevron-double-right"></i>See projects</a>
+          </div>
+          <div data-aos="fade-down" data-aos-duration="1500" class="service p-[30px] bg-[#f4f4f480] rounded-[10px] flex flex-col gap-3">
+            <i class="bi bi-laptop icon flex items-center justify-center"></i>
+            <h4>Backend</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora perferendis expedita itaque impedit provident! Temporibus repellendus rem obcaecati dolor ea odit, omnis illum in nobis!</p>
+            <a href="" class="flex items-center gap-3 px-3 py-2"><i class="bi bi-chevron-double-right"></i>See projects</a>
+          </div>
+          <div data-aos="fade-left" data-aos-duration="1500" class="service p-[30px] bg-[#f4f4f480] rounded-[10px] flex flex-col gap-3">
+            <i class="bi bi-laptop icon flex items-center justify-center"></i>
+            <h4>Architectural Design</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora perferendis expedita itaque impedit provident! Temporibus repellendus rem obcaecati dolor ea odit, omnis illum in nobis!</p>
+            <a href="" class="flex items-center gap-3 px-3 py-2"><i class="bi bi-chevron-double-right"></i>See projects</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="projects py-[75px]" id="projects">
+      <div class="container max-w-screen-xl mx-auto flex flex-col gap-4">
+        <div class="grid lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-2 gap-4">
+          <div class="img lg:col-span-3 md:col-span-5 sm:col-span-1" data-aos="fade-up">
+            <div class="inner">
+              <img src="images/alure-001-web-app.png" width="100%" alt="">
+              <div class="project_details">
+                <div class="number">01</div>
+                <div class="project_name text-center">
+                  <h4>Project Name</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, fuga!</p>
+                  <div class="flex items-center justify-between w-[90%] mx-auto">
+                    <i class="bi bi-arrows-fullscreen btn text-white border border-[#001F3F] outline-none py-3 px-10 rounded-full" title="Preview site"  data-modal-target="default-modal" data-modal-toggle="default-modal" class="block text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"></i>
+                    <i class="bi bi-link-45deg btn text-white border border-[#001F3F] outline-none py-3 px-10 rounded-full" title="Visit Site"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img lg:col-span-2 md:col-span-5 sm:col-span-1" data-aos="fade-up">
+            <div class="inner">
+              <img src="images/alure-001-web-app.png" width="100%" alt="">
+              <div class="project_details">
+                <div class="number">02</div>
+                <div class="project_name text-center">
+                  <h4>Project Name</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, fuga!</p>
+                  <div class="flex items-center justify-between w-[90%] mx-auto">
+                    <i class="bi bi-arrows-fullscreen btn text-white border border-[#001F3F] outline-none py-3 px-10 rounded-full" title="Preview site"  data-modal-target="default-modal" data-modal-toggle="default-modal" class="block text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"></i>
+                    <i class="bi bi-link-45deg btn text-white border border-[#001F3F] outline-none py-3 px-10 rounded-full" title="Visit Site"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid lg:grid-cols-6 md:grid-cols-6 sm:grid-cols-2 gap-4">
+          <div class="img lg:col-span-2 md:col-span-6 sm:col-span-1" data-aos="fade-up">
+            <div class="inner">
+              <img src="images/alure-001-web-app.png" width="100%" alt="">
+              <div class="project_details">
+                <div class="number">03</div>
+                <div class="project_name text-center">
+                  <h4>Project Name</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, fuga!</p>
+                  <div class="flex items-center justify-between w-[90%] mx-auto">
+                    <i class="bi bi-arrows-fullscreen btn text-white border border-[#001F3F] outline-none py-3 px-10 rounded-full" title="Preview site"  data-modal-target="default-modal" data-modal-toggle="default-modal" class="block text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"></i>
+                    <i class="bi bi-link-45deg btn text-white border border-[#001F3F] outline-none py-3 px-10 rounded-full" title="Visit Site"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img lg:col-span-2 md:col-span-6 sm:col-span-1" data-aos="fade-up">
+            <div class="inner">
+              <img src="images/alure-001-web-app.png" width="100%" alt="">
+              <div class="project_details">
+                <div class="number">04</div>
+                <div class="project_name text-center">
+                  <h4>Project Name</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, fuga!</p>
+                  <div class="flex items-center justify-between w-[90%] mx-auto">
+                    <i class="bi bi-arrows-fullscreen btn text-white border border-[#001F3F] outline-none py-3 px-10 rounded-full" title="Preview site"  data-modal-target="default-modal" data-modal-toggle="default-modal" class="block text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"></i>
+                    <i class="bi bi-link-45deg btn text-white border border-[#001F3F] outline-none py-3 px-10 rounded-full" title="Visit Site"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img lg:col-span-2 md:col-span-6 sm:col-span-1" data-aos="fade-up">
+            <div class="inner">
+              <img src="images/alure-001-web-app.png" width="100%" alt="">
+              <div class="project_details">
+                <div class="number">05</div>
+                <div class="project_name text-center">
+                  <h4>Project Name</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, fuga!</p>
+                  <div class="flex items-center justify-between w-[90%] mx-auto">
+                    <i class="bi bi-arrows-fullscreen btn text-white border border-[#001F3F] outline-none py-3 px-10 rounded-full" title="Preview site"  data-modal-target="default-modal" data-modal-toggle="default-modal" class="block text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"></i>
+                    <i class="bi bi-link-45deg btn text-white border border-[#001F3F] outline-none py-3 px-10 rounded-full" title="Visit Site"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-2 gap-4">
+          <div class="img lg:col-span-2 md:col-span-5 sm:col-span-1" data-aos="fade-up">
+            <div class="inner">
+              <img src="images/alure-001-web-app.png" width="100%" alt="">
+              <div class="project_details">
+                <div class="number">06</div>
+                <div class="project_name text-center">
+                  <h4>Project Name</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, fuga!</p>
+                  <div class="flex items-center justify-between w-[90%] mx-auto">
+                    <i class="bi bi-arrows-fullscreen btn text-white border border-[#001F3F] outline-none py-3 px-10 rounded-full" title="Preview site"  data-modal-target="default-modal" data-modal-toggle="default-modal" class="block text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"></i>
+                    <i class="bi bi-link-45deg btn text-white border border-[#001F3F] outline-none py-3 px-10 rounded-full" title="Visit Site"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img lg:col-span-3 md:col-span-5 sm:col-span-1" data-aos="fade-up">
+            <div class="inner">
+              <img src="images/alure-001-web-app.png" width="100%" alt="">
+              <div class="project_details">
+                <div class="number">07</div>
+                <div class="project_name text-center">
+                  <h4>Project Name</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, fuga!</p>
+                  <div class="flex items-center justify-between w-[90%] mx-auto">
+                    <i class="bi bi-arrows-fullscreen btn text-white border border-[#001F3F] outline-none py-3 px-10 rounded-full" title="Preview site"  data-modal-target="default-modal" data-modal-toggle="default-modal" class="block text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"></i>
+                    <i class="bi bi-link-45deg btn text-white border border-[#001F3F] outline-none py-3 px-10 rounded-full" title="Visit Site"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="seemore mx-auto mt-10">
+          <a href="" data-aos="fade-up"><button class="btn text-white border border-[#001F3F] outline-none py-3 px-[35px] rounded-full flex items-center gap-3 px-3 py-2">See more projects<i class="bi bi-chevron-double-right"></i></button></a>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="testimonials" class="testimonials py-[75px]">
+      <div class="container max-w-screen-xl mx-auto">
+        <div class="text-center">
+          <h2><span>Client's</span> Awesome Feedback</h2>
+          <!-- CAROUSEL STARTS -->
+          <div id="default-carousel" class="relative mx-auto  my-5 lg:w-[70%] md:w-full w-full" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="relative lg:h-[300px] md:h-[300px] h-[200px] overflow-hidden rounded-lg">
+                <!-- Item 1 -->
+                <div class="hidden flex items-center flex items-center duration-2000 ease-in-out" data-carousel-item>
+                  <figure class="max-w-screen-md mx-auto text-center">
+                    <svg class="w-10 h-10 mx-auto mb-3 text-gray-400 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                        <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
+                    </svg>
+                    <blockquote>
+                        <p class="text-2xl italic font-medium text-gray-900">"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."</p>
+                    </blockquote>
+                    <figcaption class="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
+                        <img class="w-6 h-6 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="profile picture">
+                        <div class="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-500 dark:divide-gray-700">
+                            <cite class="pe-3 font-medium text-gray-900">Olatunji Ibrahim</cite>
+                            <cite class="ps-3 text-sm text-gray-500 dark:text-gray-400">CEO at sunmence</cite>
+                        </div>
+                    </figcaption>
+                  </figure>
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden flex items-center duration-2000 ease-in-out" data-carousel-item>
+                    <figure class="max-w-screen-md mx-auto text-center">
+                      <svg class="w-10 h-10 mx-auto mb-3 text-gray-400 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                          <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
+                      </svg>
+                      <blockquote>
+                          <p class="text-2xl italic font-medium text-gray-900">"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."</p>
+                      </blockquote>
+                      <figcaption class="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
+                          <img class="w-6 h-6 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="profile picture">
+                          <div class="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-500 dark:divide-gray-700">
+                              <cite class="pe-3 font-medium text-gray-900">Olatunji Ibrahim</cite>
+                              <cite class="ps-3 text-sm text-gray-500 dark:text-gray-400">CEO at sunmence</cite>
+                          </div>
+                      </figcaption>
+                    </figure>
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden flex items-center duration-2000 ease-in-out" data-carousel-item>
+                    <figure class="max-w-screen-md mx-auto text-center">
+                      <svg class="w-10 h-10 mx-auto mb-3 text-gray-400 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                          <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
+                      </svg>
+                      <blockquote>
+                          <p class="text-2xl italic font-medium text-gray-900">"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."</p>
+                      </blockquote>
+                      <figcaption class="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
+                          <img class="w-6 h-6 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="profile picture">
+                          <div class="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-500 dark:divide-gray-700">
+                              <cite class="pe-3 font-medium text-gray-900">Olatunji Ibrahim</cite>
+                              <cite class="ps-3 text-sm text-gray-500 dark:text-gray-400">CEO at sunmence</cite>
+                          </div>
+                      </figcaption>
+                    </figure>
+                </div>
+                <!-- Item 4 -->
+                <div class="hidden flex items-center duration-2000 ease-in-out" data-carousel-item>
+                    <figure class="max-w-screen-md mx-auto text-center">
+                      <svg class="w-10 h-10 mx-auto mb-3 text-gray-400 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                          <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
+                      </svg>
+                      <blockquote>
+                          <p class="text-2xl italic font-medium text-gray-900">"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."</p>
+                      </blockquote>
+                      <figcaption class="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
+                          <img class="w-6 h-6 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="profile picture">
+                          <div class="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-500 dark:divide-gray-700">
+                              <cite class="pe-3 font-medium text-gray-900">Olatunji Ibrahim</cite>
+                              <cite class="ps-3 text-sm text-gray-500 dark:text-gray-400">CEO at sunmence</cite>
+                          </div>
+                      </figcaption>
+                    </figure>
+                </div>
+                <!-- Item 5 -->
+                <div class="hidden flex items-center duration-2000 ease-in-out" data-carousel-item>
+                    <figure class="max-w-screen-md mx-auto text-center">
+                      <svg class="w-10 h-10 mx-auto mb-3 text-gray-400 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                          <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
+                      </svg>
+                      <blockquote>
+                          <p class="text-2xl italic font-medium text-gray-900">"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."</p>
+                      </blockquote>
+                      <figcaption class="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
+                          <img class="w-6 h-6 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="profile picture">
+                          <div class="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-500 dark:divide-gray-700">
+                              <cite class="pe-3 font-medium text-gray-900">Olatunji Ibrahim</cite>
+                              <cite class="ps-3 text-sm text-gray-500 dark:text-gray-400">CEO at sunmence</cite>
+                          </div>
+                      </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            
+            <!-- Slider controls -->
+            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+          </div>
+          <!-- CAROUSEL END -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- MODAl starts -->
+    <div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+      <div class="relative p-4 w-full max-w-2xl max-h-full">
+          <!-- Modal content -->
+          <div class="content relative bg-white rounded-lg shadow dark:bg-gray-700">
+              <!-- Modal header -->
+              <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                  <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                      PROJECT NAME
+                  </h3>
+                  <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
+                      <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                      </svg>
+                      <span class="sr-only">Close modal</span>
+                  </button>
+              </div>
+              <!-- Modal body -->
+              <div class="p-4 md:p-5 space-y-4 main_body">
+                  <img src="images/alure-001-web-app.png" width="100%" alt="">
+              </div>
+              <!-- Modal footer -->
+              <div class="flex items-center justify-between p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                  <a href=""><button data-modal-hide="default-modal" type="button" class="btn flex items-center gap-2 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add or View Review(s) <i class="bi bi-plus text-[18px]"></i></button></a>
+                  <a href=""><button data-modal-hide="default-modal" type="button" class="btn flex items-center gap-2 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><i class="bi bi-arrow-down text-[18px]" title="Download template"></i></button></a>
+                  <a href=""><button data-modal-hide="default-modal" type="button" class="btn flex items-center gap-2 py-2.5 px-5 ms-3 text-sm font-medium text-white focus:outline-none rounded-lg border border-gray-200 hover:bg-gray-100 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:border-gray-600">Visit Site <i class="bi bi-link-45deg text-[18px]"></i></button></a>
+              </div>
+          </div>
+      </div>
+    </div>
+
+
+
+    <footer class="footer bg-[#f4f4f430]" id="footer">
+      <div class="container max-w-screen-xl mx-auto py-[50px]">
+        <div class="flex items-center justify-between border-b-2 border-[#f4f4f4] py-[30px]">
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+            <span class="text-[#001F3F] self-center text-2xl font-semibold whitespace-nowrap">Taofeek</span>
+          </a>
+          <div class="social flex gap-2 lg:gap-5 md:gap-5 items-center">
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+        <div class="grid grid-cols-4 py-10 layer_two gap-5 lg:gap-10 md:gap-10">
+          <div class="col-span-4 lg:col-span-2 md:col-span-2 flex flex-col gap-4">
+            <h5>ABOUT ME</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam consequuntur, fuga aut architecto commodi assumenda doloribus nemo deserunt vel excepturi debitis velit accusantium maiores eaque!</p>
+            <form action="" method="post" class="py-[30px]">
+              <div class="inputs flex items-center gap-0">
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <button type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-span-2 lg:col-span-1 md:col-span-1 flex flex-col gap-4">
+            <h5>SERVICES</h5>
+            <a href="" class="flex gap-2 items-center">
+              <i class="bi bi-chevron-right"></i>
+              <span>Web Development</span>
+            </a>
+            <a href="" class="flex gap-2 items-center">
+              <i class="bi bi-chevron-right"></i>
+              <span>Web Development</span>
+            </a>
+            <a href="" class="flex gap-2 items-center">
+              <i class="bi bi-chevron-right"></i>
+              <span>Web Development</span>
+            </a>
+            <a href="" class="flex gap-2 items-center">
+              <i class="bi bi-chevron-right"></i>
+              <span>Web Development</span>
+            </a>
+          </div>
+          <div class="col-span-2 lg:col-span-1 md:col-span-1 flex flex-col gap-4">
+            <h5>WANT TO GET IN TOUCH WITH ME?</h5>
+            <a href="tel:+2349134157417" class="flex gap-2 item-center">
+              <i class="rounded-[5px] bi-telephone h-full w-[45px] flex items-center justify-center bg-[#f4f4f4] text-[18px] border border-[#001F3F15]"></i>
+              <div class="flex flex-col gap-0">
+                <span class="text-[16px] text-[#7D7D7D] font-medium">Phone Call</span>                
+                <span class="font-bold text-[#001F3F]">09134157417</span>
+              </div>
+            </a>
+            <a href="https://wa.me/+2349134157417?text=Hello,+my+name+is+(Your+name)" class="flex gap-2 item-center">
+              <i class="rounded-[5px] bi-whatsapp h-full w-[45px] flex items-center justify-center bg-[#f4f4f4] text-[18px] border border-[#001F3F15]"></i>
+              <div class="flex flex-col gap-0">
+                <span class="text-[16px] text-[#7D7D7D] font-medium">WhatsApp</span>                
+                <span class="font-bold text-[#001F3F]">Dev. Tao</span>
+              </div>
+            </a>
+            <a href="mailto:taotundex001@gmail.com" class="flex gap-2 item-center">
+              <i class="rounded-[5px] bi-envelope h-full w-[45px] flex items-center justify-center bg-[#f4f4f4] text-[18px] border border-[#001F3F15]"></i>
+              <div class="flex flex-col gap-0">
+                <span class="text-[16px] text-[#7D7D7D] font-medium">Email</span>                
+                <span class="font-bold text-[#001F3F] w-full">taotundex001<span class="hidden lg:block md:block">@gmail.com</span></span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <center class="py-3 bg-[#001F3F] text-[#f4f4f4] text-[12px]">copyright &copy; 2024, <a href="">Taofeek</a></center>
+    </footer>
+
+
+  </div>
+<!-- MODAL end -->
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+</body>
+</html>
